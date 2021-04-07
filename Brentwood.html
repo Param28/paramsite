@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>JS example</title>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.7.0/css/all.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+
+<script>
+    function alter(arg_1){
+      document.getElementById("img_main").setAttribute("src", "a" + arg_1 + ".jpg");
+    }
+
+    function increase_main_image_width(){
+      prev =  document.getElementById("img_main").getAttribute("width");
+      prev = parseInt(prev) + 100;
+      document.getElementById("img_main").setAttribute("width", prev);
+    }
+  </script>
+
+</head>
+<body>
+<div>
+ <!-- <img src="a.jpg" id="img_main" height="400px" width="400px" alt="Select an image below to load"> -->
+  <!-- <br> -->
+  <!-- <br> -->
+  <!-- <img src="a1.jpg" onclick="alter(1)" height="100px" width="100px"> -->
+  <!-- <img src="a2.jpg" onclick="alter(2)" height="100px" width="100px"> -->
+  <!-- <img src="a3.jpg" onclick="alter(3)" height="100px" width="100px"> -->
+  <!-- <img src="a4.jpg" onclick="alter(4)" height="100px" width="100px"> -->
+
+
+  <!-- <input type="submit" onclick="increase_main_image_width();" value="Increase!"> </div> -->
+ 
+   <header class="topnav">
+         <a href="index.html" style="color:black;"}>Brentwood Bay Resort</a>
+         <div class="nav-image">
+           
+         </div>
+    </header>
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="brentwood.html">Brentwood</a>
+        
+    </div>
+    
+    <div class="sec" style="  font-size: 1.6rem; text-align:center;">
+	<br/>
+        <img src="a.jpg" id="img_main" height="400px" width="600px" alt="Select an image below to load">
+		
+		<br/>
+		<br/>
+  <img src="a1.jpg" onclick="alter(1)" height="100px" width="100px">
+            <img src="a2.jpg" onclick="alter(2)" height="100px" width="100px">
+			<img src="a3.jpg" onclick="alter(3)" height="100px" width="100px">
+			<img src="a4.jpg" onclick="alter(4)" height="100px" width="100px">
+            
+
+            <input type="submit" onclick="increase_main_image_width();" value="Increase!">
+	   <div class="secb">
+            
+             
+
+        </div>
+		<br/><br/>
+        <div class="footer" style="text-align: center;">
+            <p style="font-size: 16px; color:lightgray; font-style: italic;">Copyright &copy; 2021 Brentwood Resort</p>
+        </div>    
+    </div>
+
+    <!--Tab-->
+    <div class="tab">
+        <header class="topnav-tab">
+            <a class="label-tab" href="index.html" style="color:black;">Brentwood Bay Resort</a>
+            
+       </header>
+        
+        <div class="row">
+            <div class="tab-sidebar" style="display: inline-flex; background-color: steelblue; color: white; font-size: 0.5em; justify-content: center; align-items: center;">
+                <ul><a href="index.html">Home</a></ul>
+                <ul><a href="Brentwood.html">Brentwood</a></ul>
+               
+            </div>
+        </div>
+        
+
+                <img src="a.jpg" id="img_main" height="400px" width="600px" alt="Select an image below to load">
+		
+		<br/>
+		<br/>
+  <img src="a1.jpg" onclick="alter(1)" height="100px" width="100px">
+            <img src="a2.jpg" onclick="alter(2)" height="100px" width="100px">
+			<img src="a3.jpg" onclick="alter(3)" height="100px" width="100px">
+			<img src="a4.jpg" onclick="alter(4)" height="100px" width="100px">
+            
+
+            <input type="submit" onclick="increase_main_image_width();" value="Increase!">
+		
+		<div style="background-color: white; padding-top: 0px;">
+        
+ 
+              
+        </div>
+        <div class="footer" style="text-align: center;">
+            <p style="font-size: 6px; color:lightgray; font-style: italic;">Copyright &copy; 2021 Brentwood Resort</p>
+        </div>
+     </div>
+
+     <!--Mobile-->
+
+    <div class="mobile">
+        <header class="topnav-mob">
+            <a class="label-tab" href="index.html" style="color:black;">Brentwood Bay Resort</a>
+           
+       </header>
+
+        <div class="mob-sidebar" style=" background-color: steelblue; color: white; font-size: 0.4em; justify-content: center; text-align: center;">
+            <ul style="border: 0.5px solid black;"><a href="index.html">Home</a></ul>
+            <ul style="border: 0.5px solid black;"><a href="Brentwood.html">Brentwood</a></ul>
+           
+        </div>
+              <img src="a.jpg" id="img_main" height="400px" width="600px" alt="Select an image below to load">
+		
+		<br/>
+		<br/>
+  <img src="a1.jpg" onclick="alter(1)" height="100px" width="100px">
+            <img src="a2.jpg" onclick="alter(2)" height="100px" width="100px">
+			<img src="a3.jpg" onclick="alter(3)" height="100px" width="100px">
+			<img src="a4.jpg" onclick="alter(4)" height="100px" width="100px">
+            
+
+            <input type="submit" onclick="increase_main_image_width();" value="Increase!">
+	   
+        <div class="footer" style="text-align: center;">
+            <p style="font-size: 4px; color:lightgray; font-style: italic;">Copyright &copy; 2021 Brentwood Resort</p>
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

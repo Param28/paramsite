@@ -1,0 +1,325 @@
+html{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(181deg, #2db1ff 0%, #ffffff 50%, #2db1ff 100%);
+    }
+
+
+.bodydiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centered {
+    position: fixed;
+    width:65%;
+    height:95%;
+    top: 50%;
+    left: 50%;
+    /*bringyourownprefixes*/transform: translate(-50%, -50%);
+    background-color:#000034;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.tab-back-desk{
+
+  background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/30/06/e1/children-beach-area.jpg?w=900&h=-1&s=1);
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%; height: 50%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  .nav-image{
+    float: right;
+  }
+  .topnav {
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 26px;
+    text-decoration: none;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+  }
+
+  .topnav-tab a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 26px;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .topnav-tab .label-tab{
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .topnav-tab {
+    overflow: hidden;
+  }
+
+
+  .topnav-mob a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 13px;
+    text-decoration: none;
+    font-size: 0.5em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .topnav-mob .label-tab{
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .topnav-mob {
+    overflow: hidden;
+  }
+
+  /* DESKTOP SIDEBAR */
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    color: white;
+    padding-left: 15px;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .sidebar a:visited {
+    color: white;
+  }
+  .sidebar a:active {
+    background-color: #4CAF50;
+    color: pink;
+  }
+  
+  .sidebar a:hover {
+    color: skyblue;
+  }
+/* TAB SIDEBAR */
+.tab-sidebar {
+  width: 100%;
+  color: white;
+}
+  .tab-sidebar a {
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+  }
+   
+  .tab-sidebar a.active {
+    background-color: #4CAF50;
+    color: skyblue;
+  }
+  
+  .tab-sidebar a:hover:not(.active) {
+    color: skyblue;
+  }
+  .tab h3,p,h5{
+    padding:1px;
+    margin: 1px;
+  }
+  
+  /* MOBILE SIDEBAR */
+  .mob-sidebar a {
+    display: block;
+    text-decoration: none;
+  }
+  .mob-sidebar ul{
+     padding:0px;
+     margin: 0px;
+   }
+  .mob-sidebar a.active {
+    background-color: #4CAF50;
+    color: skyblue;
+  }
+  
+  .mob-sidebar a:hover:not(.active) {
+    color: skyblue;
+  }
+  .mobile h3,p,h5{
+    padding:1px;
+    margin: 1px;
+  }
+
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100%;
+  }
+  @media screen and (max-width: 1920px){
+    .tab{
+      display: none;
+    }
+    .mobile{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    /*.sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      background-color: steelblue;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+    */
+    .sidebar{
+      display: none;
+    }
+    html{
+      background-image: none;
+    }
+    .sec{
+      display: none;
+    }
+    .tab{
+      display: block;
+    }
+    .topnav{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+
+    .image{
+        display: none;
+    }
+   
+    .table{
+      width: 25%;
+    }
+    .sidebar{
+      display: none;
+    }
+    html{
+      background-image: none;
+    }
+    .sec{
+      display: none;
+    }
+    .mobile{
+      display: block;
+    }
+    .tab{
+      display: none;
+    }
+    
+  }
+
+  .sec{
+    float:right;
+    padding-right: 0%;
+    margin-right: 0%;
+    width:80%;
+    height:100%;
+    top: 50%;
+    left: 50%;
+    font-size:1rem;
+}
+
+.secb{
+    float: right;
+    width: 100%;
+    padding-right: 0%;
+    margin-right: 0%;
+
+    background-color: white;
+    word-wrap: break-word;
+}
+
+.table{
+  
+  width: 100%;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.table-tab{
+  width: 100%;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+}
+.table-mob{
+  width: 100%;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+}
+tr,td,thead,tbody,th{
+    border: 2px solid skyblue;
+}
+p{
+    font-size: 1rem;    
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
