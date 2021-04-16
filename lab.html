@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <title>JS example</title>
+
+  <script>
+    function pow(x, y){
+        var result;
+        x = parseInt(x);
+        y = parseInt(y);
+        result = 1;
+        // to do to implement
+        // for(var i = 0; i < y ; i++){ // i++ is equivalent to i = i + 1;
+        //     result =  result * x; // this statement is going to be executed y times
+        // }
+        for(var i = 1; i <= y ; i++){ // i++ is equivalent to i = i + 1;
+            result =  result * x; // this statement is going to be executed y times
+        }
+        return result;
+    }
+
+    function compute() {
+
+      var operator = document.getElementById('operator').value;
+      var operand_1 = document.getElementById('operand_1').value;
+      var operand_2 = document.getElementById('operand_2').value;
+      var result;
+
+      if (operator == "+") {
+        return (parseInt((operand_1)) + parseInt(operand_2));
+      }
+
+      if (operator == "-") {
+        return (parseInt(operand_1) - parseInt(operand_2));
+      }
+
+      if (operator == "*") {
+        return (parseInt(operand_1) * parseInt(operand_2));
+      }
+
+      if (operator == "/") {
+        return (parseInt(operand_1) / parseInt(operand_2));
+      }
+
+      if (operator == "^") {
+        return (pow(operand_1, operand_2));
+      }
+    }
+
+    // this statement should print 60 to the console
+  </script>
+</head>
+
+<body>
+  Enter the first operand: <input id="operand_1" type="text" value="">
+  <br>
+  Enter the second operand: <input id="operand_2" type="text" value="">
+  <br>
+  Choose the operator: <input id="operator" type="text" value="">
+  <br>
+  <input type="submit" value="Calculate" onclick="document.getElementById('result').innerHTML=compute();">
+  The result is <p id="result"> </p>
+
+  <input type="submit" value="Add to history" onclick="document.getElementById('History').innerHTML=document.getElementById('History').innerHTML + compute() + '<br>';">
+  History:  <p id="History"> </p>
+</body>
+
+</html>
