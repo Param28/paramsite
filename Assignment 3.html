@@ -1,0 +1,112 @@
+<html>
+<head>
+  <title>
+     The Bean Counter
+    </title>
+    <style type="text/css">
+      body {
+          background-color: red
+		  ;
+          color: darkorange;
+          font-family: helvetica;
+          text-align: center;
+          }
+        hr {width: 35%}
+        h1 {color: white}
+
+        section {margin-left : auto; margin-right : auto; text-align : center;}
+        .drinkBtn {width: 90px;}
+
+    </style>
+</head>
+  <script type="text/javascript">
+      var drink = "espresso";
+      var ounce = 12;
+      var shots = 1;
+
+
+      // console.log("Hello world!" + price);
+      // alert(price);
+  </script>
+<body>
+<h1> The Bean Counter </h1>
+<hr/>
+<p>Figuring the Price of Espresso Drinks <br/> So Baristas can have time to chat.</p>
+
+
+
+<section style="display: table;">
+  <div style="display: table-row;">
+    <div style="display: table-cell;"> <form name="esp">
+	       <input type="text" id="disp1" value="0.00" size="5" onchange=' '/>
+        </form> </div>
+    <div style="display: table-cell;"> <form name="esp">
+	       <input type="text" id="disp2" value="0.00" size="5" onchange=' '/>
+        </form> </div>
+    <div style="display: table-cell;"> <form name="esp">
+	       <input type="text" id="disp3" value="0.00" size="5" onchange=' '/>
+        </form> </div>
+    <div style="display: table-cell;"> </div>
+  </div>
+  <div style="display: table-row;">
+    <div style="display: table-cell;"> How many Shots? </div>
+    <div style="display: table-cell;"> What Size? </div>
+    <div style="display: table-cell;"> What kind of Drink? </div>
+    <div style="display: table-cell;"> </div>
+  </div>
+  <div style="display: table-row;">
+    <div style="display: table-cell;"><button form="esp" onclick='shots = 1; disp1.value= "1"'> 1 </button></div>
+    <div style="display: table-cell;"><button form="esp" onclick='ounce = 8; disp2.value= "8"'> S </button></div>
+    <div  style="display: table-cell;"><button class="drinkBtn" form="esp" onclick='drink = "espresso"; disp3.value= "espresso"'> ESPRESSO </button></div>
+    <div style="display: table-cell;"><button form="esp" onclick='shots = 1; drink = "espresso"; ounce = 12; disp.value = "0.00"'>Clear</button></div>
+  </div>
+  <div style="display: table-row;">
+    <div style="display: table-cell;"><button form="esp" onclick='shots = 2; disp1.value= "2"'> 2 </button></div>
+    <div style="display: table-cell;"><button form="esp" onclick='ounce = 12; disp2.value= "12"'> M </button></div>
+    <div style="display: table-cell;"><button class="drinkBtn" form="esp" onclick='drink = "latte"; disp3.value= "latte"'> LATTE</button></div>
+    <div style="display: table-cell;"></div>
+  </div>
+  <div style="display: table-row;">
+    <div style="display: table-cell;"><button form="esp" onclick='shots = 3; disp1.value= "3"'> 3 </button></div>
+    <div style="display: table-cell;"><button form="esp" onclick='ounce = 16; disp2.value= "16"'> L </button></div>
+    <div style="display: table-cell;"><button class="drinkBtn" form="esp" onclick='drink = "cappuccino"; disp3.value= "cappuccino"'> CAPPUCCINO</button></div>
+    <div style="display: table-cell;"><button form="esp" onclick='
+
+      var price;
+      var taxRate = 0.088;
+
+      if (drink == "espresso")
+        price = 1.40;
+      if (drink == "latte" || drink == "cappuccino") {
+        if (ounce == 8)
+           price = 1.95;
+        if (ounce == 12)
+           price = 2.35;
+        if (ounce == 16)
+           price = 2.75;
+      }
+
+      if (drink == "Americano")
+        price = 1.20 + 0.30*(ounce/8);
+      price = price + (shots - 1)*.50;
+      price = price + price * taxRate;
+      disp.value = (price).toFixed(2);
+      '>Total</button></div>
+  </div>
+  <div style="display: table-row;">
+    <div style="display: table-cell;"><button form="esp" onclick='shots = 4'> 4 </button></div>
+    <div style="display: table-cell;"></div>
+    <div style="display: table-cell;"><button class="drinkBtn" form="esp" onclick='drink = "Americano"'> AMERICANO</button></div>
+    <div style="display: table-cell;"><form name="esp">
+	       <input type="text" id="disp" value="0.00" size="5" onchange=' '/>
+        </form>
+    </div>
+  </div>
+  <!– repeat the table-row div 3 more times -->
+</section>
+
+
+
+
+</body>
+</html>
